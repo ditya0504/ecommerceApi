@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+body{
+    margin: 0px;
+    color:rgb(79, 78, 78);
+    font-family: 'Luxurious Roman', sans-serif;
+    --content_color: rgb(161, 160, 160);
+}
+.description{
+    border: 1px solid lightgrey;
+    height: 5rem;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.description:hover{
+    background-color: rgb(246, 243, 243);
+}
+
+.description p, .category p, .date p{
+    color: rgb(79, 78, 78);
+    font-size: 1.2rem;
+    line-height: 0;
+}
+
+.description input{
+    border: none;
+    font-size: 1.1rem;
+    width: 100%;
+    background-color: transparent;
+}
+
+.description input:focus{
+    outline: none;
+}
+.description input::placeholder{
+    /* color: rgb(161, 160, 160); */
+    color: var(--content_color);
+    display: block;
+}
+
+/* utility css */
+.text-center{
+    text-align: center;
+}
+
+.catAndDate{
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+    padding-left: 10px;
+    border-bottom: 1px solid lightgrey;
+    box-sizing: border-box;
+}
+.category, .date{
+    width: 50vw;
+    padding: 8px; 
+    box-sizing: border-box;
+}
+
+.date input{
+    border: none;
+    color: var(--content_color);
+    font-size: 1.1rem;
+    background-color: transparent;
+}
+.category{
+    border-right: 1px solid lightgrey;
+}
+.category:hover{
+    background-color: rgb(246, 243, 243);
+}
+.date:hover{
+    background-color: rgb(246, 243, 243);
+}
+
+.category select{
+    width: 45vw;
+    padding-top: 0;
+    height: 1.8rem;
+    color: rgb(161, 160, 160);
+    border: none;
+    background-color: transparent;
+}
+.category select:focus, .date input:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+#add-task, #delete-task{
+    margin: auto;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: block;
+    width: 10rem;
+    height: 3.5rem;
+    color: white;
+    text-align: center;
+}
+#add-task{
+    background-color: rgb(60, 60, 60);
+}
+
+#delete-task{
+    margin-top: 15px;
+    background-color: red;
+}
+
+#content{
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    width: 95%;
+}
+
+#list{
+    list-style: none;
+}
+
+#list li{
+    border-top: 1px solid rgb(224, 223, 223);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-cat{
+    text-transform: capitalize;
+    color: white;
+    padding: 12px;
+    width: 6rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    background-color: black;
+    text-align: center;
+}

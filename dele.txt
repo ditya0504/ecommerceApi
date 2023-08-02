@@ -1,0 +1,6 @@
+hi am vikramaditya kumar verma basically from <div class="input-group">
+  <span class="input-group-addon">
+    <input type="checkbox" name="name" id="name" aria-label="">
+  </span>
+  <input type="text" class="form-control" name="name" id="name" placeholder="" aria-label="">
+</div>
